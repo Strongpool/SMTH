@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="iconAuth.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="7.73"
+     inkscape:cx="36.481242"
+     inkscape:cy="43.01423"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <linearGradient
+       id="swatch583"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop583" />
+    </linearGradient>
+    <linearGradient
+       id="swatch582"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop582" />
+    </linearGradient>
+    <linearGradient
+       id="swatch581"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop581" />
+    </linearGradient>
+    <linearGradient
+       id="swatch580"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop580" />
+    </linearGradient>
+    <linearGradient
+       id="swatch579"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000080;stop-opacity:1;"
+         offset="0"
+         id="stop579" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch580"
+       id="linearGradient580"
+       x1="35"
+       y1="25.5"
+       x2="65"
+       y2="25.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch579"
+       id="linearGradient581"
+       x1="34.5"
+       y1="25.5"
+       x2="65.5"
+       y2="25.5"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch582"
+       id="linearGradient582"
+       x1="25"
+       y1="62.418503"
+       x2="75"
+       y2="62.418503"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#swatch583"
+       id="linearGradient583"
+       x1="25"
+       y1="75.121605"
+       x2="75"
+       y2="75.121605"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <g
+     inkscape:label="Слой 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="fill:url(#linearGradient581);stroke:url(#linearGradient580);fill-opacity:1"
+       id="path1"
+       cx="50"
+       cy="25.5"
+       inkscape:label="path1"
+       r="15" />
+    <circle
+       style="mix-blend-mode:exclusion;fill:#000080;stroke:url(#linearGradient582)"
+       id="path1-0"
+       cx="50"
+       cy="62.418503"
+       inkscape:label="path1"
+       r="25" />
+    <rect
+       style="mix-blend-mode:exclusion;fill:#000080;stroke:url(#linearGradient583);stroke-width:0.746705"
+       id="rect1"
+       width="50"
+       height="25"
+       x="25"
+       y="62.621605"
+       ry="0.80967784" />
+    <circle
+       style="fill:#00ffff"
+       id="path578"
+       cx="50"
+       cy="42.434029"
+       r="3" />
+    <ellipse
+       style="fill:#00ffff"
+       id="path579"
+       cx="50"
+       cy="52.26585"
+       rx="2"
+       ry="8" />
+  </g>
+</svg>

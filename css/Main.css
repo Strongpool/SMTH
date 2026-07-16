@@ -1,0 +1,583 @@
+html{
+  /* 1. Позиционирование и отображение */
+  /* 2. Блоковая модель */
+  /* 3. Типографика */
+  /* 4. Визуальное оформление */
+  /* 5. Трансформации и анимации */
+  /* 6. Прочее */
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+:root{
+  --color-bg: rgb(100, 115, 251);
+  --color-bg-overlay: rgba(0,0,0, 0.5);
+
+  --color-text: rgb(0, 64, 61);
+  --color-text-secondary: rgb(1, 53, 112);
+  --color-text-shadow: rgb(255, 255, 255);
+
+  --color-surface: rgb(41, 0, 248);
+  --color-accent-primory: rgb(101, 179, 253);
+  --color-accent-secondary: rgb(120, 228, 255);
+  --color-hover: rgb(29, 0, 173);
+  --color-border: white;
+
+  --margin-main: 0 auto;
+  --margin-sub: 40px auto;
+  --margin-sub-sec: 10px auto;
+
+    --padding-s: 12px;
+  --padding-m: 0 16px;
+  --padding-l: 32px;
+
+  --padding-zero: 0;
+  --padding-sidebar: 80px 20px 20px;
+  --padding-mobile-s: 8px 12px;
+  --padding-mobile-m: 0 10px;
+  --padding-mobile-l: 0 16px;
+  --padding-form-mobile: 10px;
+  --padding-auth-mobile: 24px;
+  --padding-auth-mobile-small: 20px 16px;
+
+  --font-size-main: 24px;
+  --font-size-sub: 16px;
+}
+
+/*Fonts*/
+
+.fontMain {
+  /* 3. Типографика */
+  font-family: 'Bungee', cursive;
+  font-size: var(--font-size-main);
+  color: var(--color-text);
+  text-shadow: -0.5px -0.5px 0 var(--color-text-shadow);
+}
+
+body {
+  /* 1. Позиционирование и отображение */
+  position: relative;
+
+  /* 2. Блоковая модель */
+  min-height: 100vh;
+
+  /* 4. Визуальное оформление */
+  background-image: url('/Pic/Back/bgMain.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Header*/
+
+.header {
+  /* 1. Позиционирование и отображение */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* 2. Блоковая модель */
+  max-width: 1400px;
+  margin: var(--margin-main);
+  padding: var(--padding-s);
+}
+
+.header-icon {
+  /* 1. Позиционирование и отображение */
+  /* 2. Блоковая модель */
+  padding: var(--padding-zero);
+
+  /* 4. Визуальное оформление */
+  background-color: transparent;
+  border: none;
+
+  /* 6. Прочее */
+  cursor: pointer;
+  line-height: 0;
+}
+
+.header-logo{
+  /* 4. Визуальное оформление */
+  background: transparent;
+  border: none;
+
+  /* 6. Прочее */
+  cursor: pointer;
+}
+
+.header-logo img {
+  /* 1. Позиционирование и отображение */
+  display: block;
+
+  /* 2. Блоковая модель */
+  width: 250px;
+  height: auto;
+}
+
+/*Gallery scroll*/
+
+.gallery-wrapper {
+  /* 1. Позиционирование и отображение */
+  align-items: center;
+
+  /* 2. Блоковая модель */
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: var(--margin-main);
+}
+
+.gallery {
+  /* 1. Позиционирование и отображение */
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  /* 2. Блоковая модель */
+  width: 100%;
+  max-width: 100%;
+  gap: 24px;
+  margin: var(--margin-sub);
+
+  /* 6. Прочее */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  overscroll-behavior-x: contain;
+  touch-action: pan-x;
+}
+
+
+.gallery::-webkit-scrollbar {
+  /* 6. Прочее */
+  display: none;
+}
+
+.gallery img {
+  /* 1. Позиционирование и отображение */
+  flex: 0 0 auto;
+
+  /* 2. Блоковая модель */
+  width: 90vw;
+  max-width: 450px;
+  height: auto;
+}
+
+/*Description*/
+
+.description{
+  /* 2. Блоковая модель */
+  margin: var(--margin-sub);
+
+  /* 3. Типографика */
+  text-align: center;
+}
+
+/*Devlog*/
+
+.devlog {
+  /* 2. Блоковая модель */
+  max-width: 800px;
+  margin: var(--margin-sub);
+}
+
+.devlog-btn {
+  /* 1. Позиционирование и отображение */
+  /* 2. Блоковая модель */
+  width: 100%;
+  padding: var(--padding-s);
+
+  /* 4. Визуальное оформление */
+  background: var(--color-surface);
+  border: none;
+
+  /* 6. Прочее */
+  cursor: pointer;
+}
+
+.devlog-btn:hover {
+  /* 4. Визуальное оформление */
+  background: var(--color-hover);
+}
+
+/* Сам девлог */
+.devlog-content {
+  /* 1. Позиционирование и отображение */
+  /* 2. Блоковая модель */
+  max-height: 0;
+  overflow: hidden;
+  padding: var(--padding-m);
+
+  /* 4. Визуальное оформление */
+  background: var(--color-surface);
+  opacity: 70%;
+
+  /* 5. Трансформации и анимации */
+  transition: max-height 0.1s ease;
+}
+
+/* Когда открыт */
+.devlog-content.open {
+  /* 2. Блоковая модель */
+  max-height: 500px;
+  padding: var(--padding-m);
+}
+
+/* Sidebar */
+
+.sidebar {
+  /* 1. Позиционирование и отображение */
+  position: fixed;
+  top: 0;
+  left: -300px;
+  z-index: 1000;
+
+  /* 2. Блоковая модель */
+  width: 300px;
+  height: 100vh;
+
+  /* 4. Визуальное оформление */
+  background: var(--color-bg);
+  color: var(--color-text);
+  box-shadow: 2px 0 15px var(--color-border);
+
+  /* 5. Трансформации и анимации */
+  transition: left 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  /* 1. Позиционирование и отображение */
+  left: 0;
+}
+
+.sidebar-nav {
+  /* 1. Позиционирование и отображение */
+  display: flex;
+  flex-direction: column;
+
+  /* 2. Блоковая модель */
+  padding: var(--padding-sidebar);
+  gap: 20px;
+}
+
+.sidebar-nav a {
+  /* 2. Блоковая модель */
+  padding: var(--padding-s);
+  border-bottom: 1px solid var(--color-border);
+
+  /* 3. Типографика */
+  font-size: var(--font-size-sub);
+  text-decoration: none;
+}
+
+.sidebar-nav button{
+  /* 1. Позиционирование и отображение */
+  margin-right: auto;
+
+  /* 2. Блоковая модель */
+  padding: var(--padding-s);
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+
+  /* 3. Типографика */
+  font-size: var(--font-size-sub);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+
+  /* 4. Визуальное оформление */
+  background-color: transparent;
+
+  /* 6. Прочее */
+  cursor: pointer;
+}
+
+.sidebar-nav a:hover {
+  /* 3. Типографика */
+  color: var(--color-hover);
+}
+
+.sidebar-nav button:hover {
+  /* 3. Типографика */
+  color: var(--color-hover);
+}
+
+.close-btn {
+  /* 1. Позиционирование и отображение */
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  /* 3. Типографика */
+  font-size: var(--font-size-main);
+  color: var(--color-accent-primory);
+
+  /* 4. Визуальное оформление */
+  background: none;
+  border: none;
+
+  /* 6. Прочее */
+  cursor: pointer;
+}
+
+.sidebar-overlay {
+  /* 1. Позиционирование и отображение */
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+
+  /* 4. Визуальное оформление */
+  background: var(--color-bg-overlay);
+  opacity: 0;
+  visibility: hidden;
+
+  /* 5. Трансформации и анимации */
+  transition: opacity 0.3s ease;
+}
+
+.sidebar-overlay.active {
+  /* 4. Визуальное оформление */
+  opacity: 1;
+  visibility: visible;
+}
+
+/*Autorization*/
+
+.auth-modal{
+  /* 1. Позиционирование и отображение */
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+
+  /* 2. Блоковая модель */
+  width: 100vw;
+  height: 100vh;
+
+  /* 4. Визуальное оформление */
+  background: var(--color-bg-overlay);
+}
+
+/* ЛОГ/РЕГ */
+.auth-container {
+  /* 1. Позиционирование и отображение */
+  z-index: 1000;
+
+  /* 2. Блоковая модель */
+  max-width: 400px;
+  margin: var(--margin-sub);
+  padding: var(--padding-l);
+
+  /* 3. Типографика */
+  color: var(--color-text);
+  text-align: center;
+
+  /* 4. Визуальное оформление */
+  background: var(--color-bg);
+  border-radius: 12px;
+}
+
+.auth-close{
+  /* 2. Блоковая модель */
+  width: 100%;
+  padding: var(--padding-s);
+  border: none;
+  border-radius: 6px;
+
+  /* 3. Типографика */
+  color: var(--color-text);
+
+  /* 4. Визуальное оформление */
+  background: var(--color-accent-secondary);
+
+  /* 6. Прочее */
+  cursor: pointer;
+}
+
+.auth-tabs {
+  /* 1. Позиционирование и отображение */
+  display: flex;
+
+  /* 2. Блоковая модель */
+  margin-bottom: 20px;
+}
+
+.tab-btn {
+  /* 1. Позиционирование и отображение */
+  flex: 1;
+
+  /* 2. Блоковая модель */
+  padding: var(--padding-s);
+  border: none;
+
+  /* 3. Типографика */
+  font-size: 16px;
+  color: var(--color-text);
+
+  /* 4. Визуальное оформление */
+  background: var(--color-accent-secondary);
+
+  /* 6. Прочее */
+  cursor: pointer;
+}
+
+.tab-btn.active {
+  /* 4. Визуальное оформление */
+  background: var(--color-accent-primory);
+}
+
+.auth-form {
+  /* 1. Позиционирование и отображение */
+  display: none;
+}
+
+.auth-form.active {
+  /* 1. Позиционирование и отображение */
+  display: block;
+}
+
+.auth-container input {
+  /* 2. Блоковая модель */
+  width: calc(100% - 24px);
+  padding: var(--padding-s);
+  margin: var(--margin-sub-sec);
+  border: none;
+  border-radius: 6px;
+}
+
+.auth-form button {
+  /* 2. Блоковая модель */
+  width: 100%;
+  padding: var(--padding-s);
+  border: none;
+  border-radius: 6px;
+
+  /* 3. Типографика */
+  color: var(--color-text);
+
+  /* 4. Визуальное оформление */
+  background: var(--color-accent-primory);
+
+  /* 6. Прочее */
+  cursor: pointer;
+}
+
+/* ===================== МЕДИЙКА ===================== */
+
+/* ---- 768px и ниже ---- */
+@media (max-width: 768px) {
+
+  /* Header */
+  .header {
+    padding: var(--padding-mobile-s);
+  }
+  .header-icon img {
+    width: 28px;
+    height: 28px;
+  }
+  .header-logo img {
+    width: 140px;
+  }
+
+  /* Gallery */
+  .gallery-wrapper {
+    padding: var(--padding-mobile-m);
+  }
+  .gallery {
+    gap: 16px;
+    padding: 10px 0;
+  }
+  .gallery img {
+    max-width: 280px;
+    width: 75vw;
+  }
+
+  /* Description */
+  .description {
+    padding: var(--padding-mobile-l);
+  }
+  .description p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  /* Devlog */
+  .devlog {
+    max-width: 100%;
+    padding: var(--padding-mobile-l);
+  }
+  .devlog-btn {
+    font-size: 18px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 260px;
+  }
+
+  /* Auth Modal */
+  .auth-container {
+    width: 92%;
+    max-width: 360px;
+    padding: var(--padding-auth-mobile);
+    margin: 20px;
+  }
+  .auth-tabs {
+    margin-bottom: 16px;
+  }
+  .tab-btn {
+    padding: var(--padding-form-mobile);
+    font-size: 15px;
+  }
+  .auth-container input {
+    padding: var(--padding-form-mobile);
+    margin: 8px 0;
+  }
+  .auth-form button,
+  .auth-close {
+    padding: var(--padding-form-mobile);
+    font-size: 15px;
+  }
+}
+
+/* ---- 480px и ниже ---- */
+@media (max-width: 480px) {
+
+  /* Header */
+  .header-icon img {
+    width: 24px;
+    height: 24px;
+  }
+  .header-logo img {
+    width: 120px;
+  }
+
+  /* Gallery */
+  .gallery img {
+    max-width: 240px;
+  }
+
+  /* Description */
+  .description p {
+    font-size: 16px;
+  }
+
+  /* Devlog */
+  .devlog-btn {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 240px;
+  }
+
+  /* Auth Modal */
+  .auth-container {
+    padding: var(--padding-auth-mobile-small);
+  }
+}

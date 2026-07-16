@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMTH01 Main Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Main.css">
+    <script src="js/Script.js" defer></script>
+</head>
+<body class="fontMain">
+  <main>
+
+    <header class="header" id="main-header">
+        <button class="menu-btn header-icon" type="button">
+          <img src="Pic/mainIcons/iconMenu.svg" alt="Меню">
+        </button>
+
+        <button class="logo-btn header-logo" type="button">
+          <img src="Pic/mainIcons/iconLogo.svg" alt="Логотип">
+        </button>
+
+        <button class="auth-btn header-icon" type="button">
+          <img src="Pic/mainIcons/iconAuth.svg" alt="Войти">
+        </button>
+    </header>
+
+    <section class="gallery-wrapper" id="gallery">
+      <div class="gallery">
+      <img src="Pic/img-placeholder.png" alt="Изображение галереи">
+            <img src="Pic/img-placeholder.png" alt="Изображение галереи">
+            <img src="Pic/img-placeholder.png" alt="Изображение галереи">
+            <img src="Pic/img-placeholder.png" alt="Изображение галереи">
+            <img src="Pic/img-placeholder.png" alt="Изображение галереи">
+      </div>
+    </section>
+
+    <section class="description" id="description">
+      <p class="fontMain">
+        description placeholder description placeholder description placeholder
+        description placeholder description placeholder description placeholder
+        description placeholder description placeholder description placeholder
+        description placeholder description placeholder description placeholder
+      </p>
+    </section>
+  </main>
+
+  <section class="devlog" id="devlog">
+    <button class="devlog-btn fontMain">
+      📓 Развернуть девлог
+    </button>
+
+    <div class="devlog-content">
+      <p>День 1: Сделал карту</p>
+      <p>День 2: Добавил события</p>
+      <p>День 3: Начал сайт</p>
+    </div>
+  </section>
+
+  <section class="sidebar" id="sidebar">
+    <button class="close-btn" type="button">✕</button>
+    <nav class="sidebar-nav">
+              <a href="#main-header">Главная</a>
+              <a href="#gallery">Галерея</a>
+              <a href="#description">Описание</a>
+              <a href="#devlog">Девлог</a>
+              <button class="auth-btn fontMain">Войти/Регистрация</button>
+            </nav>
+  </section>
+  <!-- Overlay (закрывает меню при клике вне) -->
+  <div class="sidebar-overlay" id="overlay"></div>
+
+  <section class="auth-modal">
+    <div class="auth-container">
+      <div class="auth-tabs">
+        <button class="tab-btn active" data-tab="login">Войти</button>
+        <button class="tab-btn" data-tab="register">Регистрация</button>
+      </div>
+
+      <!-- Форма логина -->
+      <form id="login-form" class="auth-form active">
+        <h2>Вход</h2>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <button type="submit">Войти</button>
+      </form>
+
+      <!-- Форма регистрации -->
+      <form id="register-form" class="auth-form">
+        <h2>Регистрация</h2>
+        <input type="text" placeholder="Никнейм" required>
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Пароль" required>
+        <input type="password" placeholder="Повтори пароль" required>
+        <button type="submit">Зарегистрироваться</button>
+      </form>
+      <button class="auth-close">Продолжить без регистрации</button>
+    </div>
+  </section>
+</body>
+</html>
